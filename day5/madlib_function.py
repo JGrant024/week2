@@ -14,3 +14,15 @@
 # # "Jeff's favorite subject is history."
 
 # Provide default arguments in case one or both are omitted.
+
+def madlib(name="John", subject="math"):
+    return f"{name}'s favorite subject is {subject}."
+
+# Examples with default arguments
+result1 = madlib()
+result2 = madlib("Jenn")
+result3 = madlib("Jeff", "history")
+
+print(result1)
+print(result2)
+print(result3)

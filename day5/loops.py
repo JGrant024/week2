@@ -20,3 +20,5 @@ while start_number < end_number:
         print("Current number", start_number)
         start_number += 1 
 print("Loop completed! ")
+
+## Bonus was not yet completed. 
