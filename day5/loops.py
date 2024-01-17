@@ -15,7 +15,7 @@ start_number = int(input("What is your starting number? "))
 end_number = int(input("What is your ending number? ")) 
 
 
-#created a while loop that reads while the start number is less than the ending number displays the current number and its value adding 1 to each line iterated over. 
+#created a while loop that reads while the start number is less than the ending number print the current number and its value adding 1 to each line iterated over. 
 while start_number < end_number: 
         print("Current number", start_number)
         start_number += 1 
