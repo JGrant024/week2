@@ -19,3 +19,16 @@
 # Will output:
 
 # 2015 Nissan Leaf
+
+class Vehicle: 
+    def __init__(self, year, make, model,): 
+        self.year = year
+        self.make = make 
+        self.model = model
+    
+    def print_info(self): 
+        print("%s %s %s" % (self.year, self.make, self.model))
+
+car = Vehicle('2015', 'Nissan', 'Leaf')
+
+car.print_info()
