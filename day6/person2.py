@@ -1,24 +1,13 @@
-# # Go back to the Person class.
+# Go back to the Person class.
 
-# # class Person:
-# #     def __init__(self, name, email, phone):
-# #          self.name = name
-# #          self.email = email
-# #          self.phone = phone
+# Add a print_contact_info method to the Person class that will print out the contact info for a object instance of Person.
 
-# #      def greet(self, other_person):
-# #          print('Hello %s, I am %s!' % (other_person.name, self.name))
+# sonny.print_contact_info()
 
-# # Add a print_contact_info method to the Person class that will print out the contact info for a object instance of Person.
+# Should generate this output:
 
-# # sonny.print_contact_info()
-
-# # Should generate this output:
-
-# # Sonny's email: sonny@hotmail.com
-# # Sonny's phone number: 483-485-4948
-
-
+# Sonny's email: sonny@hotmail.com
+# Sonny's phone number: 483-485-4948
 
 
 # Add an instance variable (attribute)
@@ -58,3 +47,45 @@
 
 # jordan.num_friends()
 # 1
+
+
+class Person:
+    def __init__(self, name, email, phone):
+         self.name = name
+         self.email = email
+         self.phone = phone
+         self.friends = []
+
+    def greet(self, other_person):
+         print('Hello %s, I am %s!' % (other_person.name, self.name))
+
+
+    # MAKE SURE YOU PASS IN EACH STRING TO COMPLETE ARGUMENTS! ex. s("%s" % (self.ex1, self.ex2))
+    def print_contact_info(self):
+       print("%s's Email: %s " %(self.name, self.email))
+       print("%s's Phone Number: %s " % (self.name, self.phone))
+
+# function that adds friends 
+    def add_friend(self, friend): 
+       self.friends.append(friend)
+
+# a function that returns the legnth of friends
+    def num_friends(self):
+        return len(self.friends)
+
+# Add a print_contact_info method to the Person class that will print out the contact info for a object instance of Person. (Instantiate)
+sonny = Person("Sonny", "sonny@hotmail.com", "483-485-4948")
+jordan = Person("Jordan", "Jordan@aol.com", '495-586-3456',)
+
+
+# adding friends using the add friend method: 
+jordan.add_friend(sonny)
+sonny.add_friend(jordan)
+
+
+#this will print all of sonny's contact info 
+sonny.print_contact_info() 
+
+#This will print the output for each persons number of friends 
+print(jordan.num_friends())
+print(sonny.num_friends())
