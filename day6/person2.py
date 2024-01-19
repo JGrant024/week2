@@ -30,7 +30,8 @@
 # Add an add_friend method
 # The fact that a person's friends attribute is a list is an implementation detail of the Person class.
 
-# Occassionally you'll want to hide implementation details from the users of your object/class. Implement an add_friend method to Person, so that in order to add a friend you call this method:
+# Occassionally you'll want to hide implementation details from the users of your object/class. 
+# eImplement an add_friend method to Person, so that in order to add a friend you call this method:
 
 # jordan.add_friend(sonny)
 
@@ -82,6 +83,9 @@ jordan = Person("Jordan", "Jordan@aol.com", '495-586-3456',)
 jordan.add_friend(sonny)
 sonny.add_friend(jordan)
 
+
+sonny.greet(jordan) 
+jordan.greet(sonny)
 
 #this will print all of sonny's contact info 
 sonny.print_contact_info() 
